@@ -37,6 +37,8 @@ public class DogBoarder {
       String cost = "You owe $" + (days * daily_rate) + "0.";
       System.out.println(cost);
       return cost;
+    } else if (shots == 0) {
+      return "No dogs are currently boarded.";
     } else {
       return ("Error: Dog not found.");
     }
